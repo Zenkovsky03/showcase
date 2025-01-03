@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import {NavLink} from 'react-router-dom';
 import {Link as LinkR} from 'react-router-dom';
 
 const Nav = styled.nav`
@@ -55,15 +54,74 @@ const NavLogo = styled(LinkR)`
         padding: 0 0px;
     }
 `;
+
+const NavLink = styled.a`
+    color: ${({ theme }) => theme.text_primary};
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        color: ${({ theme }) => theme.primary};
+    }
+`;
+
+const ButtonContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    padding: 0 6px;
+    @media screen and (max-width: 640px) {
+        display: none;
+    }
+`;
+
+
+const NavItems = styled.ul`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+    @media screen and (max-width: 768px){
+         display: none;
+    }
+`;
+
+const GithubContainer = styled.button`
+    border: 1.8px solid ${({ theme }) => theme.primary};
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    font-size:1rem;
+    font-weight: 500;
+    cursor: pointer;
+    height: 70%;
+    background-color: transparent;
+    color: ${({ theme }) => theme.primary};
+    :hover {
+        background-color: ${({ theme }) => theme.primary};
+        color: ${({ theme }) => theme.white};
+    }
+    @media screen and (max-width: 640px) {
+        font-size: 0.8rem;
+    }
+    
+`;
+
 function Navbar() {
     return (
         <Nav>
             <NavContainer>
                 <NavLogo>Logo</NavLogo>
                 <MobileIcon></MobileIcon>
-                <NavItem>
+                <NavItems>
                     <NavLink>Home</NavLink>
-                </NavItem>
+                </NavItems>
                 <ButtonContainer>
                     <GithubContainer>Github</GithubContainer>
                 </ButtonContainer>
