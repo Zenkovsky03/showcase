@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {Link as LinkR} from 'react-router-dom';
 import {DiCssdeck} from "react-icons/di";
+import {FaBars} from "react-icons/fa";
 
 
 const Nav = styled.nav`
@@ -121,7 +122,28 @@ export const Span = styled.div`
     font-size: 18px;
 `;
 
+const MobileMenu = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    position: absolute;
+    top: 80;
+    right: 0;
+    width: 100%;
+    padding: 12px 40px 24px 40px;
+    background: ${({ theme }) => theme.card_light};
+    transition: all 0.3s ease-in-out;
+    transform: ${({ open }) => open ? 'translateX(0)':'translateX(100%)'};
+    border-radius: 0 0 20 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    opacity: ${({ open }) => open ? '1' : '0'};
+    z-index: ${({ open }) => open ? '1' : '-1'};
+`;
+
+
 function Navbar() {
+    const [open, setOpen] = React.useState(false);
     return (
         <Nav>
             <NavContainer>
@@ -138,7 +160,12 @@ function Navbar() {
                         <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
                     </a>
                 </NavLogo>
-                <MobileIcon></MobileIcon>
+                <MobileIcon>
+                    <FaBars
+                        onClick={() => setOpen(!open)}
+                    >
+                    </FaBars>
+                </MobileIcon>
                 <NavItems>
                     <NavLink href="#about">About</NavLink>
                     <NavLink href="#skills">Skills</NavLink>
@@ -150,6 +177,13 @@ function Navbar() {
                     <GithubContainer>Github profile</GithubContainer>
                 </ButtonContainer>
             </NavContainer>
+            {
+                open && (
+                    <MobileMenu open={open}>
+
+                    </MobileMenu>
+                )
+            }
         </Nav>
     );
 }
