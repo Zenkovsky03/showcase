@@ -1,6 +1,6 @@
 # React Portfolio
 
-Welcome to my personal portfolio! This project showcases my skills, projects, and experience as a [developer/designer/etc.]. Built with **React**, it provides a dynamic and interactive platform to learn more about me and my work.
+Welcome to my personal portfolio! This project showcases my skills, projects, and experience as a [developer]. Built with **React**, it provides a dynamic and interactive platform to learn more about me and my work.
 
 ## 🚀 Demo
 
