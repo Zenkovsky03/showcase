@@ -8,7 +8,7 @@ You can view the live version of the portfolio here: [Portfolio Link](https://li
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies Used********
 
 - **React** – For building a dynamic, component-based UI
 - **Styled-Components** – For styling the components
