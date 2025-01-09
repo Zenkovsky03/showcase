@@ -5,7 +5,7 @@ import {darkTheme} from "./utils/Themes";
 import Navbar from "./components/Navbar";
 import Hero from "./components/HeroSection";
 import Skills from "./components/Skills";
-import Education from "./components/Skills";
+import Education from "./components/Education";
 import {BrowserRouter as Router} from "react-router-dom";
 const Body = styled.div`
     background-color: ${({ theme }) => theme.bg};
