@@ -5,8 +5,8 @@ import styled from "styled-components";
 const Card = styled.div`
     width: 650px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0,1);
-    padding: 12 px 16px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,1);
+    padding: 12px 16px;
     justify-content: space-between;
     position: relative;
     overflow: hidden;
@@ -64,6 +64,60 @@ const Role = styled.div`
     }
 `;
 
+const Company = styled.div`
+    font-size: 14px;
+    font-weight: 500;
+    color: ${({ theme }) => theme.text_primary+99};
+    
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+`;
+
+const Duration = styled.div`
+    font-size: 12px;
+    font-weight: 400;
+    color: ${({ theme }) => theme.text_secondary+80};
+    
+    @media (max-width: 768px) {
+        font-size: 10px;
+    }
+`;
+
+const Desc = styled.div`
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    color: ${({ theme }) => theme.text_primary+99};
+    margin-bottom: 10px;
+    
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+`;
+
+const Skills = styled.div`
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    margin-top: 10px
+`;
+
+const ItemWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px
+`;
+
+const Skill = styled.div`
+    font-size: 15px;
+    font-weight: 400;
+    color: ${({ theme }) => theme.text_primary+99};
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+`;
+
 function ExperienceCard({experience}) {
     return (
         <Card>
@@ -75,7 +129,23 @@ function ExperienceCard({experience}) {
                     <Duration>{experience.date}</Duration>
                 </Body>
             </Top>
-            {/*<Desc></Desc>*/}
+            <Desc>
+                {experience.desc}
+                {experience?.skills &&
+                    <>
+                        <br/>
+                        <Skills>
+                            <b>Skills:</b>
+                            <ItemWrapper>
+                                {experience.skills.map((skill, i) => (
+                                    <Skill> • {skill}</Skill>
+                                    ))}
+                            </ItemWrapper>
+                        </Skills>
+
+                    </>
+                }
+            </Desc>
             {/*{experience.doc &&*/}
             {/*    <a href={experience.doc} target="new">*/}
             {/*        <Document>*/}
