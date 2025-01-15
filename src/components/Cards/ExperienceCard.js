@@ -2,6 +2,24 @@ import React from 'react';
 import styled from "styled-components";
 
 
+
+
+
+const Document = styled.img`
+    height: 70px;
+    width: fit-content;
+    background-color: #000;
+    border-radius: 10px;
+    display: none;
+    
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+`;
+
+
+
 const Card = styled.div`
     width: 650px;
     border-radius: 10px;
@@ -21,6 +39,9 @@ const Card = styled.div`
     &:hover {
         box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
         transform: translateY(-5px);
+    }
+    &:hover ${Document}{
+        display: flex ;
     }
     
     @media (max-width: 768px) {
@@ -118,6 +139,8 @@ const Skill = styled.div`
     }
 `;
 
+
+
 function ExperienceCard({experience}) {
     return (
         <Card>
@@ -146,13 +169,11 @@ function ExperienceCard({experience}) {
                     </>
                 }
             </Desc>
-            {/*{experience.doc &&*/}
-            {/*    <a href={experience.doc} target="new">*/}
-            {/*        <Document>*/}
-
-            {/*        </Document>*/}
-            {/*    </a>*/}
-            {/*}*/}
+            {experience.doc &&
+                <a href={experience.doc} target="new">
+                    <Document experience={experience.doc} />
+                </a>
+            }
         </Card>
     );
 }
