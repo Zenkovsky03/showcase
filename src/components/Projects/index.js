@@ -96,16 +96,28 @@ function Projects(props) {
                 <Desc>Here are some of my projects</Desc>
                 <ToogleGroup>
                     {toogle === "all" ? (
-                        <ToogleButton active value="all">All</ToogleButton>
+                        <ToogleButton active value="all" onClick={()=>setToogle("all")}>All</ToogleButton>
                     ) : (
-                        <ToogleButton value="all" >All</ToogleButton>
+                        <ToogleButton value="all" onClick={()=>setToogle("all")} >All</ToogleButton>
                     )}
                     <Divider/>
-                    <ToogleButton>Web app's</ToogleButton>
+                    {toogle === "web app" ? (
+                        <ToogleButton active value="web app" onClick={()=>setToogle("web app")}>Web app's</ToogleButton>
+                    ) : (
+                        <ToogleButton value="web app" onClick={()=>setToogle("web app")}>Web app's</ToogleButton>
+                    )}
                     <Divider/>
-                    <ToogleButton>MLL</ToogleButton>
+                    {toogle === "mll" ? (
+                        <ToogleButton active value="mll" onClick={()=>setToogle("mll")}>MLL</ToogleButton>
+                    ) : (
+                        <ToogleButton value="mll" onClick={()=>setToogle("mll")}>MLL</ToogleButton>
+                    )}
                     <Divider/>
-                    <ToogleButton>Other</ToogleButton>
+                    {toogle === "other" ? (
+                        <ToogleButton active value="other" onClick={()=>setToogle("other")}>Other</ToogleButton>
+                    ) : (
+                        <ToogleButton value="other" onClick={()=>setToogle("other")}>Other</ToogleButton>
+                    )}
                 </ToogleGroup>
             </Wrapper>
         </Container>
