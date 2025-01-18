@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import {useState} from "react";
+import ProjectCard from '../Cards/ProjectCard';
+import {projects} from "../../data/constants";
 
 const Container = styled.div`
     display: flex;
@@ -87,6 +89,14 @@ const Divider = styled.div`
     background-color: ${({ theme }) => theme.primary};
 `;
 
+
+const CardContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 28px
+`;
 function Projects(props) {
     const [toogle, setToogle] = useState("all");
     return (
@@ -119,6 +129,12 @@ function Projects(props) {
                         <ToogleButton value="other" onClick={()=>setToogle("other")}>Other</ToogleButton>
                     )}
                 </ToogleGroup>
+
+                <CardContainer>
+                    {toogle === "all" && projects.map((project, index) => <ProjectCard project={project} />)}
+                    {projects.filter((item) => item.category === toogle).map((project, index) => (<ProjectCard project={project} />))}
+
+                </CardContainer>
             </Wrapper>
         </Container>
     );

@@ -223,4 +223,29 @@ export const projects = [
         github: "/",
         webapp: "/",
     },
+    {
+        id: 9,
+        title: "lorem lorem",
+        date: "lorem lorem lorem",
+        description:
+            "lorem lorem",
+        image:
+            "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+        tags: [
+            "Docker",
+            "AWS",
+            "DuckDNS",
+            "Eslint",
+            "Husky",
+            "CI/CD",
+            "React Js",
+            "MongoDb",
+            "Node Js",
+            "Express Js",
+            "Redux",
+        ],
+        category: "web app",
+        github: "/",
+        webapp: "/",
+    }
 ];
