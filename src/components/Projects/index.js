@@ -133,7 +133,6 @@ function Projects(props) {
                 <CardContainer>
                     {toogle === "all" && projects.map((project, index) => <ProjectCard project={project} />)}
                     {projects.filter((item) => item.category === toogle).map((project, index) => (<ProjectCard project={project} />))}
-
                 </CardContainer>
             </Wrapper>
         </Container>
