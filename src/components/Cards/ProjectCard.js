@@ -27,10 +27,10 @@ const Card = styled.div`
 function ProjectCard({project}) {
     return (
         <Card>
-                <Image src={project.image} alt="Project image" />
-                <Tags />
-                <Details></Details>
-                <Members></Members>
+                {/*<Image src={project.image} alt="Project image" />*/}
+                {/*<Tags />*/}
+                {/*<Details></Details>*/}
+                {/*<Members></Members>*/}
         </Card>
     );
 }
