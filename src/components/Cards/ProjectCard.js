@@ -24,13 +24,45 @@ const Card = styled.div`
 `;
 
 
+const Image = styled.img`
+    width: 100%;
+    height: 180px;
+    background-color: ${({ theme }) => theme.white};
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
+`;
+
+
+const Tags = styled.div`
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+    align-items: center;
+`;
+
+const Details = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px 2px;
+`;
+
+const Members = styled.div`
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+`;
 function ProjectCard({project}) {
     return (
         <Card>
-                {/*<Image src={project.image} alt="Project image" />*/}
-                {/*<Tags />*/}
-                {/*<Details></Details>*/}
-                {/*<Members></Members>*/}
+                <Image src={project.image} alt="Project image" />
+                <Tags />
+                <Details></Details>
+                <Members></Members>
         </Card>
     );
 }
