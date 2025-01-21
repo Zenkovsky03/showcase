@@ -43,6 +43,28 @@ const Tags = styled.div`
     align-items: center;
 `;
 
+const Tag = styled.span`
+    font-size: 12px;
+    font-weight: 400;
+    color: ${({ theme }) => theme.primary};
+    background: ${({ theme }) => theme.primary+15};
+    padding: 2px 8px;
+    border-radius: 10px;
+`;
+
+const Title = styled.div`
+    font-size: 20px;
+    font-weight: 600;
+    color: ${({ theme }) => theme.text_secondary};
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+`;
+
 const Details = styled.div`
     width: 100%;
     display: flex;
@@ -60,8 +82,14 @@ function ProjectCard({project}) {
     return (
         <Card>
                 <Image src={project.image} alt="Project image" />
-                <Tags />
-                <Details></Details>
+                <Tags>
+                    {project.tags.map(tag => (
+                        <Tag key={tag}>{tag}</Tag>
+                    ))}
+                </Tags>
+                <Details>
+                    <Title>{project.title}</Title>
+                </Details>
                 <Members></Members>
         </Card>
     );
