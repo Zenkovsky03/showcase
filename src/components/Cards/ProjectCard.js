@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 
 
+
 const Card = styled.div`
     width: 330px;
     height: 490px;
@@ -78,6 +79,43 @@ const Members = styled.div`
     align-items: center;
     padding-left: 10px;
 `;
+
+
+const Date = styled.div`
+    font-size: 12px;
+    font-weight: 400;
+     margin-left: 2px;
+    color: ${({ theme }) => theme.text_secondary + 80};
+    
+    @media (max-width: 768px){
+        font-size: 10px;
+    }
+`;
+
+const Description = styled.div`
+    font-weight: 400;
+    color: ${({ theme }) => theme.text_secondary + 99};
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    margin-top: 8px;
+    max-width: 100%;
+
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    
+`;
+
+const Avatar = styled.div`
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-left: -10px;
+    background-color: ${({ theme }) => theme.white};
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid ${({ theme }) => theme.card};
+`;
+
 function ProjectCard({project}) {
     return (
         <Card>
@@ -89,8 +127,14 @@ function ProjectCard({project}) {
                 </Tags>
                 <Details>
                     <Title>{project.title}</Title>
+                    <Date>{project.date}</Date>
+                    <Description>{project.description}</Description>
                 </Details>
-                <Members></Members>
+                <Members>
+                    {project.member?.map(item => (
+                        <Avatar src={item.img} alt="Project avatar" />
+                    ))}
+                </Members>
         </Card>
     );
 }
