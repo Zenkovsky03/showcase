@@ -71,7 +71,7 @@ const Body = styled.div`
     width: 100%;
 `;
 
-const Role = styled.div`
+const Name = styled.div`
     font-size: 18px;
     font-weight: 600;
     color: ${({ theme }) => theme.text_primary+99};
@@ -81,7 +81,7 @@ const Role = styled.div`
     }
 `;
 
-const Company = styled.div`
+const Degree = styled.div`
     font-size: 14px;
     font-weight: 500;
     color: ${({ theme }) => theme.text_primary+99};
@@ -91,7 +91,7 @@ const Company = styled.div`
     }
 `;
 
-const Duration = styled.div`
+const Date = styled.div`
     font-size: 12px;
     font-weight: 400;
     color: ${({ theme }) => theme.text_secondary+80};
@@ -137,41 +137,41 @@ const Skill = styled.div`
 
 
 
-function ExperienceCard({experience}) {
+function EducationCard({education}) {
     return (
         <Card>
             <Top>
-                <Logo src={experience.img} alt="experience logo" />
+                <Logo src={education.img} alt="school page" />
                 <Body>
-                    <Role>{experience.role}</Role>
-                    <Company>{experience.company}</Company>
-                    <Duration>{experience.date}</Duration>
+                    <Name>{education.school}</Name>
+                    <Degree>{education.degree}</Degree>
+                    <Date>{education.date}</Date>
                 </Body>
             </Top>
-            <Desc>
-                {experience.desc}
-                {experience?.skills &&
-                    <>
-                        <br/>
-                        <Skills>
-                            <b>Skills:</b>
-                            <ItemWrapper>
-                                {experience.skills.map((skill, i) => (
-                                    <Skill> • {skill}</Skill>
-                                    ))}
-                            </ItemWrapper>
-                        </Skills>
+            {/*<Desc>*/}
+            {/*    {experience.desc}*/}
+            {/*    {experience?.skills &&*/}
+            {/*        <>*/}
+            {/*            <br/>*/}
+            {/*            <Skills>*/}
+            {/*                <b>Skills:</b>*/}
+            {/*                <ItemWrapper>*/}
+            {/*                    {experience.skills.map((skill, i) => (*/}
+            {/*                        <Skill> • {skill}</Skill>*/}
+            {/*                    ))}*/}
+            {/*                </ItemWrapper>*/}
+            {/*            </Skills>*/}
 
-                    </>
-                }
-            </Desc>
-            {experience.doc &&
-                <a href={experience.doc} target="new">
-                    <Document experience={experience.doc} />
-                </a>
-            }
+            {/*        </>*/}
+            {/*    }*/}
+            {/*</Desc>*/}
+            {/*{experience.doc &&*/}
+            {/*    <a href={experience.doc} target="new">*/}
+            {/*        <Document experience={experience.doc} />*/}
+            {/*    </a>*/}
+            {/*}*/}
         </Card>
     );
 }
 
-export default ExperienceCard;
+export default EducationCard;
