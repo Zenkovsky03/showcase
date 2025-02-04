@@ -13,7 +13,7 @@ import {BrowserRouter as Router} from "react-router-dom";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 // import ProjectDetails from "./components/ProjectDetails";
 
 const Body = styled.div`
@@ -56,7 +56,7 @@ function App() {
                       <Education />
                       <Contact />
                   </Wrapper>
-                  {/*<Footer />*/}
+                  <Footer />
                   {/*{openModal.state && */}
                   {/*  <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />*/}
                   {/*}*/}
