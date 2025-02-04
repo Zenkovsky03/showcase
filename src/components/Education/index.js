@@ -73,6 +73,7 @@ const TimeLineSection = styled.div`
 `;
 
 
+
 function Education(props) {
     return (
         <Container id="education">

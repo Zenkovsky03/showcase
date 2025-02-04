@@ -113,29 +113,24 @@ const Desc = styled.div`
     }
 `;
 
-const Skills = styled.div`
-    width: 100%;
-    display: flex;
-    gap: 12px;
-    margin-top: 10px
+const Span = styled.span`
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    max-width: 100%;
+    text-overflow: ellipsis;
 `;
 
-const ItemWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px
-`;
-
-const Skill = styled.div`
-    font-size: 15px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_primary+99};
-    @media (max-width: 768px) {
+const Grade = styled.div`
+    font-size: 14px;
+    font-weight: 500;
+    color: ${({ theme }) => theme.text_secondary + 99};
+    
+    @media (max-width: 768px){
         font-size: 12px;
     }
 `;
-
-
 
 function EducationCard({education}) {
     return (
@@ -148,28 +143,10 @@ function EducationCard({education}) {
                     <Date>{education.date}</Date>
                 </Body>
             </Top>
-            {/*<Desc>*/}
-            {/*    {experience.desc}*/}
-            {/*    {experience?.skills &&*/}
-            {/*        <>*/}
-            {/*            <br/>*/}
-            {/*            <Skills>*/}
-            {/*                <b>Skills:</b>*/}
-            {/*                <ItemWrapper>*/}
-            {/*                    {experience.skills.map((skill, i) => (*/}
-            {/*                        <Skill> • {skill}</Skill>*/}
-            {/*                    ))}*/}
-            {/*                </ItemWrapper>*/}
-            {/*            </Skills>*/}
-
-            {/*        </>*/}
-            {/*    }*/}
-            {/*</Desc>*/}
-            {/*{experience.doc &&*/}
-            {/*    <a href={experience.doc} target="new">*/}
-            {/*        <Document experience={experience.doc} />*/}
-            {/*    </a>*/}
-            {/*}*/}
+            <Grade>Grade:{education.grade}</Grade>
+            <Desc>
+                <Span>{education.desc}</Span>
+            </Desc>
         </Card>
     );
 }
