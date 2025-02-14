@@ -8,8 +8,8 @@ export const Bio = {
         "",
     github: "https://github.com/Zenkovsky03",
     resume:
-        "/",
-    linkedin: "/",
+        "/SOON",
+    linkedin: "https://www.linkedin.com/in/mateusz-zaniewski-43a394220/",
 };
 
 export const skills = [
@@ -46,16 +46,21 @@ export const skills = [
 
 export const experiences = [
     {
-        id: 0,
-        img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-        role: "lorem lorem",
-        company: "bluerider",
-        date: "lorem lorem",
-        desc: "test dziala extra",
+        id: 1,
+        img: "/",
+        role: "Project Menager",
+        company: "BlueRider",
+        date: "february-march 2022",
+        desc: "He successfully implemented himself in an exemplary software development process. Demonstrated a high level of communication within the team during his role as Project Manager. Ensured the definition of tasks for team members, supported them in the development of applications and was responsible for the presentation of developed functionalities to end users.",
         skills: [
-            "Docker",
+            "JavaScript",
+            "git",
+            "git-flow",
+            "gitlab",
+            "React",
+            "Redmine",
         ],
-        doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
+        //doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
     },
 
 
@@ -63,40 +68,49 @@ export const experiences = [
 
 export const education = [
     {
-        id: 0,
-        img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
-        school: "ZSE",
-        date: "lorem lorem",
-        grade: "lorem",
-        desc: "",
-        degree: "",
+        id: 1,
+        img: "/",
+        school: "Zespol Szkol Elektrycznych w Bialymstoku",
+        date: "september 2019 - may 2023",
+        grade: "",
+        desc: "During my education, I gained a solid foundation in programming and computer science. I mastered key skills such as working with databases, developing web, mobile and desktop applications, as well as issues related to algorithms, data structures and IT security.",
+        degree: "programming technician",
+    },
+    {
+        id: 2,
+        img: "/",
+        school: "Politechnika Bialostocka",
+        date: "october 2023 - up to now",
+        grade: "",
+        desc: "During my studies, I develop my knowledge of computer science and modern technologies. I acquire skills related to programming, design and optimization of information systems, as well as working with databases and network infrastructure.I pay special attention to algorithmics, data analysis and IT security issues. ",
+        degree: "Computer Science Engineer",
     },
 ];
 
 export const projects = [
     {
         id: 9,
-        title: "lorem lorem",
-        date: "lorem lorem lorem",
+        title: "Corgy Connect",
+        date: "2024",
         description:
-            "lorem lorem",
+            "A website dedicated to dog lovers built using django, drf and templates",
         image:
-            "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+            "/",
         tags: [
-            "Docker",
+            "Django",
+            "Python",
+            "Jinja",
+            "HTML5",
+            "CSS",
             "AWS",
-            "DuckDNS",
-            "Eslint",
-            "Husky",
-            "CI/CD",
-            "React Js",
-            "MongoDb",
-            "Node Js",
-            "Express Js",
-            "Redux",
+            "RDS",
+            "S3BUCKET",
+            "DRF",
+            "SQLite",
+            "API",
         ],
         category: "web app",
-        github: "/",
+        github: "https://github.com/Zenkovsky03/CorgyConnect",
         webapp: "/",
     },
 ];
