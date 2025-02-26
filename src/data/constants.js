@@ -1,3 +1,14 @@
+import pb from "../images/pb_logo.webp"
+import zse  from "../images/zse_logo.png"
+import rider from "../images/blue_logo.png"
+
+
+import corgy from "../images/coryg_connect_logo.jpg"
+
+
+import django_logo from "../images/django_logo.svg"
+import git_logo from "../images/git_logo.png"
+import html_logo from "../images/html_logo.png"
 export const Bio = {
     name: "Mateusz Zaniewski",
     roles: [
@@ -17,9 +28,8 @@ export const skills = [
         title: "Frontend",
         skills: [
             {
-                name: "React Js",
-                image:
-                    "data:images/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+                name: "HTML5",
+                image: html_logo,
             },
         ],
     },
@@ -28,7 +38,7 @@ export const skills = [
         skills: [
             {
                 name: "Django",
-                image: "https://nodejs.org/static/images/logo.svg",
+                image: django_logo,
             },
         ],
     },
@@ -37,8 +47,7 @@ export const skills = [
         skills: [
             {
                 name: "Git",
-                image:
-                    "https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667",
+                image:git_logo,
             },
         ],
     },
@@ -47,7 +56,7 @@ export const skills = [
 export const experiences = [
     {
         id: 1,
-        img: "/",
+        img: rider,
         role: "Project Menager",
         company: "BlueRider",
         date: "february-march 2022",
@@ -69,7 +78,7 @@ export const experiences = [
 export const education = [
     {
         id: 1,
-        img: "/",
+        img: zse,
         school: "Zespol Szkol Elektrycznych w Bialymstoku",
         date: "september 2019 - may 2023",
         grade: "",
@@ -78,7 +87,7 @@ export const education = [
     },
     {
         id: 2,
-        img: "/",
+        img: pb,
         school: "Politechnika Bialostocka",
         date: "october 2023 - up to now",
         grade: "",
@@ -94,8 +103,7 @@ export const projects = [
         date: "2024",
         description:
             "A website dedicated to dog lovers built using django, drf and templates",
-        image:
-            "/",
+        image: corgy,
         tags: [
             "Django",
             "Python",
