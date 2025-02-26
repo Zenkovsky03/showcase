@@ -112,6 +112,7 @@ export const SkillItem = styled.div`
 `;
 
 export const SkillImage = styled.img`
-    width: 24px;
-    height: 24px;
+    width: 30px; //24px
+    height: 30px;
+    
 `;

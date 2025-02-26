@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import {skills} from "../../data/constants";
 
 import {Container, Wrapper, Title, Desc, SkillsContainer, Skill, SkillTitle, SkillList, SkillItem, SkillImage} from "./SkillsStyles";

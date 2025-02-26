@@ -9,6 +9,25 @@ import corgy from "../images/coryg_connect_logo.jpg"
 import django_logo from "../images/django_logo.svg"
 import git_logo from "../images/git_logo.png"
 import html_logo from "../images/html_logo.png"
+import aws_logo from "../images/amazon_aws-icon.svg"
+import chash_logo from "../images/chash_logo.webp"
+import css_logo from "../images/css_logo.svg"
+import docker_logo from "../images/docker-icon.svg"
+import drf_logo from "../images/drf_logo.png"
+import jinja_logo from "../images/jinja_logo.png"
+import js_logo from "../images/js_logo.webp"
+import mysql_logo from "../images/mysql-official.svg"
+import php_logo from "../images/php-icon.svg"
+import python_logo from "../images/python_logo.svg"
+import rds_logo from "../images/rds_logo.png"
+import react_logo from "../images/reactjs-icon.svg"
+import s3bucket_logo from "../images/s3bucket_logo.png"
+import sqllite_logo from "../images/sqlite-icon.svg"
+import postgres_logo from "../images/postgres.svg"
+
+
+
+
 export const Bio = {
     name: "Mateusz Zaniewski",
     roles: [
@@ -33,39 +52,39 @@ export const skills = [
             },
             {
                 name: "CSS",
-                image: "/",
+                image: css_logo,
             },
             {
                 name: "Python",
-                image: "/",
+                image: python_logo,
             },
             {
                 name: "Django",
-                image: "/",
+                image: django_logo,
             },
             {
                 name: "DjangoRestFramework",
-                image: "/",
+                image: django_logo,
             },
             {
                 name: "JavaScript",
-                image: "/",
+                image: js_logo,
             },
             {
                 name: "Git",
-                image: "/",
+                image: git_logo,
             },
             {
                 name: "Docker",
-                image: "/",
+                image: docker_logo,
             },
             {
                 name: "MySQL",
-                image: "/",
+                image: mysql_logo,
             },
             {
                 name: "Jinja",
-                image: "/",
+                image: jinja_logo,
             },
         ],
     },
@@ -74,51 +93,51 @@ export const skills = [
         skills: [
             {
                 name: "PostgresSQL",
-                image: django_logo,
+                image: postgres_logo,
             },
             {
                 name: "PHP",
-                image: django_logo,
+                image: php_logo,
             },
             {
                 name: "C#",
-                image: django_logo,
+                image: chash_logo,
             },
             {
                 name: "React",
-                image: django_logo,
+                image: react_logo,
             },
             {
                 name: "AWS",
-                image: django_logo,
+                image: aws_logo,
             },
             {
                 name: "RDS",
-                image: django_logo,
+                image: rds_logo,
             },
             {
                 name: "S3BUCKET",
-                image: django_logo,
+                image: s3bucket_logo,
             },
             {
                 name: "SQLite",
-                image: django_logo,
+                image: sqllite_logo,
             },
         ],
     },
-    {
-        title: "Others",
-        skills: [
-            {
-                name: "Git",
-                image:git_logo,
-            },
-            {
-                name: "AWS",
-                image: "/",
-            },
-        ],
-    },
+    // {
+    //     title: "Others",
+    //     skills: [
+    //         {
+    //             name: "Git",
+    //             image:git_logo,
+    //         },
+    //         {
+    //             name: "AWS",
+    //             image: "/",
+    //         },
+    //     ],
+    // },
 ];
 
 export const experiences = [
