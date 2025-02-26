@@ -143,7 +143,7 @@ function EducationCard({education}) {
                     <Date>{education.date}</Date>
                 </Body>
             </Top>
-            <Grade>Grade:{education.grade}</Grade>
+            {/*<Grade>{education.grade}</Grade>*/}
             <Desc>
                 <Span>{education.desc}</Span>
             </Desc>

@@ -147,20 +147,20 @@ export const education = [
     {
         id: 1,
         img: zse,
-        school: "Zespol Szkol Elektrycznych w Bialymstoku",
-        date: "september 2019 - may 2023",
-        grade: "",
+        school: "Secondary Technical School ofg Electrical Engineering in Bialystok",
+        date: "2019 - 2023",
+        // grade: "Programmer technician",
         desc: "During my education, I gained a solid foundation in programming and computer science. I mastered key skills such as working with databases, developing web, mobile and desktop applications, as well as issues related to algorithms, data structures and IT security.",
-        degree: "programming technician",
+        degree: "Programmer technician",
     },
     {
         id: 2,
         img: pb,
-        school: "Politechnika Bialostocka",
-        date: "october 2023 - up to now",
-        grade: "",
+        school: "Bialystok University of Technology",
+        date: "2023 - 2027",
+        // grade: "Computer science",
         desc: "During my studies, I develop my knowledge of computer science and modern technologies. I acquire skills related to programming, design and optimization of information systems, as well as working with databases and network infrastructure.I pay special attention to algorithmics, data analysis and IT security issues. ",
-        degree: "Computer Science Engineer",
+        degree: "Computer science",
     },
 ];
 
