@@ -25,19 +25,83 @@ export const Bio = {
 
 export const skills = [
     {
-        title: "Frontend",
+        title: "I use regularly",
         skills: [
             {
                 name: "HTML5",
                 image: html_logo,
             },
+            {
+                name: "CSS",
+                image: "/",
+            },
+            {
+                name: "Python",
+                image: "/",
+            },
+            {
+                name: "Django",
+                image: "/",
+            },
+            {
+                name: "DjangoRestFramework",
+                image: "/",
+            },
+            {
+                name: "JavaScript",
+                image: "/",
+            },
+            {
+                name: "Git",
+                image: "/",
+            },
+            {
+                name: "Docker",
+                image: "/",
+            },
+            {
+                name: "MySQL",
+                image: "/",
+            },
+            {
+                name: "Jinja",
+                image: "/",
+            },
         ],
     },
     {
-        title: "Backend",
+        title: "I have contact with",
         skills: [
             {
-                name: "Django",
+                name: "PostgresSQL",
+                image: django_logo,
+            },
+            {
+                name: "PHP",
+                image: django_logo,
+            },
+            {
+                name: "C#",
+                image: django_logo,
+            },
+            {
+                name: "React",
+                image: django_logo,
+            },
+            {
+                name: "AWS",
+                image: django_logo,
+            },
+            {
+                name: "RDS",
+                image: django_logo,
+            },
+            {
+                name: "S3BUCKET",
+                image: django_logo,
+            },
+            {
+                name: "SQLite",
                 image: django_logo,
             },
         ],
@@ -48,6 +112,10 @@ export const skills = [
             {
                 name: "Git",
                 image:git_logo,
+            },
+            {
+                name: "AWS",
+                image: "/",
             },
         ],
     },
